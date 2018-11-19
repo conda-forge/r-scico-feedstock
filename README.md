@@ -14,9 +14,8 @@ Summary: Colour choice in information visualisation is important in order to avo
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-scico-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-scico-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/r-scico-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-scico-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-scico-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-scico-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/r-scico-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/r-scico-feedstock)
 
 Current release info
 ====================
