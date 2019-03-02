@@ -1,4 +1,4 @@
-{% set version = '1.0.0' %}
+{% set version = '1.1.0' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -7,16 +7,15 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: scico_{{ version }}.tar.gz
   url:
     - {{ cran_mirror }}/src/contrib/scico_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/scico/scico_{{ version }}.tar.gz
-  sha256: ae7677c15da8a917d4ca095051a7a9baa0a69e3f5c3296f4513d174890243cfc
+  sha256: 64f475312b2a4fc313210a173d27059815e5843ccec0f1e12e3e350d2b51a230
 
 build:
-  noarch: generic
   merge_build_host: True  # [win]
-  number: 1001
+  number: 0
+  noarch: generic
   rpaths:
     - lib/R/lib/
     - lib/
@@ -39,15 +38,33 @@ about:
   license: MIT
   summary: Colour choice in information visualisation is important in order to avoid being mislead
     by inherent bias in the used colour palette. The 'scico' package provides access
-    to the perceptually uniform and colour-blindness friendly palettes developed by
-    Fabio Crameri and released under the "Scientific Colour-Maps" moniker. The package
-    contains 17 different palettes and includes both diverging and sequential types.
+    to the perceptually uniform and colour-blindness  friendly palettes developed by
+    Fabio Crameri and released under the  "Scientific Colour-Maps" moniker. The package
+    contains 24 different palettes  and includes both diverging and sequential types.
   license_family: MIT
 
 extra:
   recipe-maintainers:
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
+    - conda-forge/r
+
+# Package: scico
+# Title: Colour Palettes Based on the Scientific Colour-Maps
+# Version: 1.1.0
+# Date: 2018-11-20
+# Authors@R: c( person("Thomas Lin", "Pedersen", email = "thomasp85@gmail.com", role = c("aut", "cre")), person("Fabio", "Crameri", role = c("aut")))
+# Maintainer: Thomas Lin Pedersen <thomasp85@gmail.com>
+# Description: Colour choice in information visualisation is important in order to avoid being mislead by inherent bias in the used colour palette. The 'scico' package provides access to the perceptually uniform and colour-blindness  friendly palettes developed by Fabio Crameri and released under the  "Scientific Colour-Maps" moniker. The package contains 24 different palettes  and includes both diverging and sequential types.
+# License: MIT + file LICENSE
+# Encoding: UTF-8
+# LazyData: true
+# Depends: R (>= 2.10)
+# Imports: grDevices
+# Suggests: ggplot2, testthat, dplyr
+# URL: https://github.com/thomasp85/scico
+# BugReports: https://github.com/thomasp85/scico/issues
+# RoxygenNote: 6.1.1
+# NeedsCompilation: no
+# Packaged: 2018-11-20 07:41:59 UTC; thomas
+# Author: Thomas Lin Pedersen [aut, cre], Fabio Crameri [aut]
+# Repository: CRAN
+# Date/Publication: 2018-11-20 10:10:02 UTC
