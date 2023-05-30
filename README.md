@@ -1,11 +1,11 @@
-About r-scico
-=============
+About r-scico-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-scico-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/thomasp85/scico
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-scico-feedstock/blob/main/LICENSE.txt)
 
 Summary: Colour choice in information visualisation is important in order to avoid being mislead by inherent bias in the used colour palette. The 'scico' package provides access to the perceptually uniform and colour-blindness  friendly palettes developed by Fabio Crameri and released under the  "Scientific Colour-Maps" moniker. The package contains 24 different palettes  and includes both diverging and sequential types.
 
