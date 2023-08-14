@@ -1,4 +1,4 @@
-{% set version = "1.4.0" %}
+{% set version = "1.5.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/scico_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/scico/scico_{{ version }}.tar.gz
-  sha256: 669ea379b5a860cac1eade28965e11dd409eca27b86ef4f3245aee9475c59afd
+  sha256: 647121b3f64118b162a35f9709a301f696239e9a707a04559c0368617c01c9b0
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
